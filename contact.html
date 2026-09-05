@@ -3,18 +3,110 @@
 <head>
   <title>Contact — My Guide Site</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-    body { background: #f5f5f5; color: #333; line-height: 1.6; }
-    header { background: #2d3748; color: white; padding: 20px; text-align: center; }
-    nav ul { list-style: none; margin-top: 10px; }
-    nav li { display: inline-block; margin: 0 15px; }
-    nav a { color: #90cdf4; text-decoration: none; font-weight: 600; }
-    nav a:hover { color: #f6e05e; }
-    main { max-width: 600px; margin: 30px auto; padding: 0 20px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-    h2 { color: #2d3748; text-align: center; margin-bottom: 25px; }
-    ul { list-style: none; margin-top: 20px; padding: 0; }
-    li { padding: 15px; margin: 10px 0; background: #f7fafc; border-radius: 8px; border-left: 4px solid #2b6cb0; font-size: 1.1em; }
-    footer { text-align: center; padding: 20px; color: #718096; margin-top: 30px; }
+           * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        main > p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2c3e50;
+            padding: 0 10px;
+        }
+        form div {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        button {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #34495e;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
   </style>
 </head>
 <body>
