@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Name — My Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; color: #333; background: #f4f4f4; }
+    
+    header { background: #1e293b; color: white; padding: 1.5rem; text-align: center; }
+    .logo { font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem; }
+    nav { margin-top: 1rem; }
+    nav a { color: #93c5fd; margin: 0 0.8rem; text-decoration: none; }
+    nav a:hover { color: white; text-decoration: underline; }
+    
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; background: white; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .place-img { max-width: 100%; margin: 1.5rem 0; border-radius: 6px; }
+    h1 { color: #1e293b; margin-bottom: 1rem; }
+    
+    .suggest-form { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e2e8f0; }
+    .suggest-form h2 { color: #1e293b; margin-bottom: 1rem; }
+    .form-group { margin: 1.2rem 0; }
+    .form-group label { display: block; margin-bottom: 0.4rem; font-weight: 500; }
+    .form-group input[type="text"],
+    .form-group input[type="email"] { width: 100%; padding: 0.7rem; font-size: 1rem; border: 1px solid #cbd5e1; border-radius: 4px; }
+    .form-group fieldset { border: 1px solid #cbd5e1; border-radius: 4px; padding: 1rem; margin: 1rem 0; }
+    .form-group legend { font-weight: bold; color: #1e293b; }
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] { margin: 0.5rem 0.5rem 0 0; }
+    .suggest-form button { background: #2563eb; color: white; border: none; padding: 0.8rem 1.8rem; font-size: 1rem; border-radius: 6px; cursor: pointer; margin-top: 0.5rem; }
+    .suggest-form button:hover { background: #1d4ed8; }
+    
+    footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📍 My Place Guide</div>
+  <p>Discover great places around!</p>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ==============================================
+       PLACE DETAIL — REPLACE WITH YOUR OWN CONTENT
+       ============================================== -->
+  <h1>My Favorite Café</h1>
+  <p>A cozy spot with great coffee and relaxing vibes — perfect for hanging out or getting work done.</p>
+  <!-- ⚠️ Image path: use ../ since inside places/ folder -->
+  <img src="../images/cafe.jpg" alt="Cozy Café" class="place-img">
+
+  <!-- ==============================================
+       ✅ SUGGEST-A-PLACE FORM — ALL REQUIREMENTS
+       ============================================== -->
+  <section class="suggest-form">
+    <h2>📍 Suggest a Place</h2>
+    <p>Know a great spot we should add? Recommend it below!</p>
+
+    <form action="#" method="post">
+      <!-- 1. Place Name — REQUIRED Text Input -->
+      <div class="form-group">
+        <label for="place-name">Place Name:</label>
+        <input type="text" id="place-name" name="place-name" required placeholder="e.g., Coffee Shop, Park, Library">
+      </div>
+
+      <!-- 2. Category — RADIO BUTTONS (fieldset + legend, SAME name) -->
+      <fieldset class="form-group">
+        <legend>Category:</legend>
+        <label><input type="radio" name="category" id="cat-food" value="food"> Food / Restaurant</label><br>
+        <label><input type="radio" name="category" id="cat-study" value="study-spot"> Study Spot</label><br>
+        <label><input type="radio" name="category" id="cat-outdoors" value="outdoors"> Outdoors / Nature</label>
+      </fieldset>
+
+      <!-- 3. What's Good — CHECKBOXES (SAME name, multiple select) -->
+      <div class="form-group">
+        <p>What's good about it? (Select all that apply):</p>
+        <label><input type="checkbox" name="features" id="feat-affordable" value="affordable"> Affordable</label><br>
+        <label><input type="checkbox" name="features" id="feat-wifi" value="good-wifi"> Good WiFi</label><br>
+        <label><input type="checkbox" name="features" id="feat-quiet" value="quiet"> Quiet & Peaceful</label>
+      </div>
+
+      <!-- 4. Contact Email — REQUIRED type="email" -->
+      <div class="form-group">
+        <label for="suggest-email">Your Contact Email:</label>
+        <input type="email" id="suggest-email" name="suggest-email" required placeholder="your@email.com">
+      </div>
+
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>2026 My Place Guide — Discover & Share Great Spots!</p>
+</footer>
+
+</body>
+</html>
