@@ -47,29 +47,20 @@
 </header>
 
 <main>
-  <!-- ==============================================
-       PLACE DETAIL — REPLACE WITH YOUR OWN CONTENT
-       ============================================== -->
   <h1>My Favorite Café</h1>
   <p>A cozy spot with great coffee and relaxing vibes — perfect for hanging out or getting work done.</p>
-  <!-- ⚠️ Image path: use ../ since inside places/ folder -->
-  <img src="IMG_5638.png" alt="Cozy Café" class="place-img">
+  <img src="IMG_5638.png" alt="Cafe Uno Picture" class="place-img">
 
-  <!-- ==============================================
-       ✅ SUGGEST-A-PLACE FORM — ALL REQUIREMENTS
-       ============================================== -->
   <section class="suggest-form">
     <h2>📍 Suggest a Place</h2>
     <p>Know a great spot we should add? Recommend it below!</p>
 
     <form action="#" method="post">
-      <!-- 1. Place Name — REQUIRED Text Input -->
       <div class="form-group">
         <label for="place-name">Place Name:</label>
         <input type="text" id="place-name" name="place-name" required placeholder="e.g., Coffee Shop, Park, Library">
       </div>
 
-      <!-- 2. Category — RADIO BUTTONS (fieldset + legend, SAME name) -->
       <fieldset class="form-group">
         <legend>Category:</legend>
         <label><input type="radio" name="category" id="cat-food" value="food"> Food / Restaurant</label><br>
@@ -77,7 +68,6 @@
         <label><input type="radio" name="category" id="cat-outdoors" value="outdoors"> Outdoors / Nature</label>
       </fieldset>
 
-      <!-- 3. What's Good — CHECKBOXES (SAME name, multiple select) -->
       <div class="form-group">
         <p>What's good about it? (Select all that apply):</p>
         <label><input type="checkbox" name="features" id="feat-affordable" value="affordable"> Affordable</label><br>
@@ -85,7 +75,7 @@
         <label><input type="checkbox" name="features" id="feat-quiet" value="quiet"> Quiet & Peaceful</label>
       </div>
 
-      <!-- 4. Contact Email — REQUIRED type="email" -->
+      
       <div class="form-group">
         <label for="suggest-email">Your Contact Email:</label>
         <input type="email" id="suggest-email" name="suggest-email" required placeholder="your@email.com">
