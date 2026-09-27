@@ -1,0 +1,203 @@
+:root {
+  --brand-color: #233448;        
+  --text-dark: #1a1a1a;          
+  --text-light: #6b7280;        
+  --bg-light: #f8f9fa;           
+  --card-bg: #ffffff;            
+  --link-color: #3b82f6;         
+  --border-light: #e5e7eb;       
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+header {
+  background-color: var(--brand-color);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  opacity: 1;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  color: var(--brand-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+.place-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.place-card img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.place-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+.place-card p {
+  color: var(--text-dark);
+  margin-bottom: 0.6rem;
+}
+
+.place-card a {
+  color: var(--link-color);
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+.content-box {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.content-box h2 {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.content-box h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--brand-color);
+}
+
+.content-box p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.content-box img {
+  max-width: 240px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 0.5rem 0 1rem;
+}
+
+.content-box ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-box li {
+  margin-bottom: 0.5rem;
+}
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--brand-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+.form-box {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  max-width: 550px;
+}
+
+.form-box h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--brand-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.form-box label {
+  display: block;
+  margin: 1.2rem 0 0.4rem;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  outline: none;
+  border-color: var(--link-color);
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
