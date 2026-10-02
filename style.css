@@ -1,7 +1,7 @@
 :root {
   --brand-color: #233448;        
   --text-dark: #1a1a1a;          
-  --text-light: #6b7280;        
+  --text-light: #4b5563;        
   --bg-light: #f8f9fa;           
   --card-bg: #ffffff;            
   --link-color: #3b82f6;         
@@ -190,7 +190,8 @@ main h2 {
 }
 
 .form-box input:focus,
-.form-box select:focus {
+.form-box select:focus
+.form-box textarea:focus{
   outline: none;
   border-color: var(--link-color);
 }
